@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AppList</title>
+    <link rel="stylesheet" href="../../css/public.css">
+    <link rel="stylesheet" href="../../css/apps/appList.css">
+    <script type="text/javascript" src="../../js/jquery.js"></script>
+</head>
+<body>
+
+    <ul class="waller fullWidth fullHeight">
+        <li id="header"></li>
+        <li id="content" class="fullWidth">
+            <ul class="apps fullWidth">
+                <li class="app fullWidth flexCS">
+                    <input type="hidden" name="id" class="id" value="1">
+                    <img class="appIcon" src="../../img/appIcon.png">
+                    <ul class="appDetails fullWidth">
+                        <li class="appNameFrame flexCS">
+                            <h2>应用名称：</h2>
+                            <h2 class="appName">After（闹钟App）</h2>
+                        </li>
+                        <li class="appDescriptionFrame">
+                            <h4>功能描述：</h4>
+                            <span class="appDescription flexSS">1.提供桌面数字时钟小部件；
+                                2.提供按重复天数响铃的服务
+                            </span>
+                        </li>
+                        <li class="ops flexCS">
+                            <a href="#" class="info flexCC">应用详情</a>
+                            <a href="#" class="androidDownload flexCC">Android下载</a>
+                        </li>
+                        <li class="androidQRFrame disPlayNone">
+                            <img src="../../img/QRCode.png"
+                                 class="androidQR fullWidth fullHeight">
+                        </li>
+                    </ul>
+                </li>
+                <li class="app fullWidth flexCS"></li>
+            </ul>
+        </li>
+        <li id="footer"></li>
+    </ul>
+
+    <script type="text/javascript" src="../../js/public.js"></script>
+    <script type="text/javascript" src="../../js/apps/appList.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+.navigationFrame{
+    height: 400px;
+    width: 700px;
+    position: absolute;
+    z-index: 1;
+    color: white;
+    opacity: 0.7;
+}
+.navigationTheme{
+    font-size: 8em;
+    border-bottom: 5px solid white;
+}
+.navigation{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.navigation div{
+    width: 170px;
+    height: 40px;
+    margin: 30px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.navigation div:hover{
+    animation: bgColorTransparent2White_colorWhite256 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bgColorTransparent2White_colorWhite256{
+    from{
+        background-color: transparent;
+        color: white;
+    }
+    to{
+        background-color: white;
+        color: rgb(56,56,56);
+    }
+}

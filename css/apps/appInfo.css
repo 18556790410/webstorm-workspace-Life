@@ -1,0 +1,48 @@
+.appNameFrame,
+.appReferenceTipFrame,
+.appUpdateLogTipFrame{
+    border-bottom: 1px solid rgba(56,56,56,0.2);
+    height: 60px;
+}
+.appName,
+.appReferenceTip,
+.appUpdateLogTip{
+    margin-left: 50px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.appPicsFrame{
+    height: 400px;
+}
+.appPic{
+    margin: 20px;
+    height: 90%;
+    width: 220px;
+    background-color: rebeccapurple;
+}
+.appReference,
+.appUpdateLog{
+    margin-left: 50px;
+    white-space: pre-line;
+    word-break: break-all;
+}
+.appUpdateDateSelector{
+    margin-left: 20px;
+    font-size: 1em;
+    border: 0;
+    font-weight: bold;
+}
+
+.appPic:hover{
+    animation: showShadow;
+    animation-fill-mode: forwards;
+}
+
+@keyframes showShadow {
+    from{
+        box-shadow: 0 0 0;
+    }
+    to{
+        box-shadow: 0 0 5px black;
+    }
+}

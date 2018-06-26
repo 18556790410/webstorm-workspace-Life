@@ -1,0 +1,30 @@
+.footer{
+    position: relative;
+    height: 200px;
+    background-color: rgb(56,56,56);
+}
+.qrCodeFrame{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    right: 25px;
+    border: 3px solid white;
+}
+.contactsFrame{
+    height: 156px;
+    width: 40%;
+    position: absolute;
+    right: 206px;
+}
+.contactsFrame li{
+    color: white;
+    height: 25%;
+    font-size: 1.2em;
+}
+.reference{
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+    color: white;
+    font-size: 1.2em;
+}
