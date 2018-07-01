@@ -8,7 +8,7 @@ $(document).ready(function () {
 
     //初始化
     function init(){
-        //初始化头部、侧边导航栏、尾部公共组件
-        initModule([$('#header'),$('#footer')]);
+        //初始化头部
+        initModule([$('#header')]);
     }
 });
