@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AppList</title>
+    <link rel="stylesheet" href="../../../../css/public.css">
+    <link rel="stylesheet" href="../../../../css/admin/management/apps/appList.css">
+    <script type="text/javascript" src="../../../../js/jquery.js"></script>
+</head>
+<body>
+
+    <ul class="waller fullWidth fullHeight">
+        <li class="title fullWidth flexCS">App列表</li>
+        <li class="th fullWidth flexCS">
+            <span class="fullHeight flexCS" style="width: 10%;">编号</span>
+            <span class="fullHeight flexCS" style="width: 20%;">App名称</span>
+            <span class="fullHeight flexCS" style="width: 20%;">上传时间</span>
+            <span class="fullHeight halfWidth flexCS">操作</span>
+        </li>
+        <li class="fullWidth">
+            <ul class="apps fullWidth">
+                <li class="app fullWidth flexCS">
+                    <input type="hidden" class="id" value="1">
+                    <span class="number fullHeight flexCS">1</span>
+                    <span class="name fullHeight flexCS">After</span>
+                    <span class="uploadTime fullHeight flexCS">2018-07-03 15:28</span>
+                    <div class="ops fullHeight halfWidth flexCS">
+                        <span class="update flexCC">更新</span>
+                        <span class="delete flexCC">删除</span>
+                    </div>
+                </li>
+
+
+            </ul>
+        </li>
+    </ul>
+
+    <ul class="queryDeleteFrame disPlayNone">
+        <li class="deleteTip fullWidth halfHeight flexSS"></li>
+        <li class="choice fullWidth halfHeight flexEC">
+            <span class="cancel flexCC">取消</span>
+            <span class="query flexCC">删除</span>
+        </li>
+    </ul>
+    <div class="disabledWaller fullWidth fullHeight disPlayNone"></div>
+    <div class="tip disPlayNone"></div>
+
+    <script type="text/javascript" src="../../../../js/admin/management/apps/appList.js"></script>
+</body>
+</html>

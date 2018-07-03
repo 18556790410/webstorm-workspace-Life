@@ -1,0 +1,112 @@
+.title,
+.th{
+    height: 60px;
+    background-color: rgb(56,56,56);
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.th{
+    margin-top: 2px;
+}
+.apps{
+    color: white;
+    font-size: 1.2em;
+}
+.app{
+    height: 50px;
+    border-bottom: 1px dashed white;
+    background-color: rgba(56,56,56,0.6);
+    cursor: pointer;
+}
+.number{
+    width: 10%;
+}
+.name,
+.uploadTime{
+    width: 20%;
+}
+
+.ops span{
+    width: 130px;
+    height: 30px;
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    margin: 10px;
+}
+.ops .update{
+    margin-left: 0;
+}
+
+.queryDeleteFrame{
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    z-index: 1000;
+    background-color: white;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto auto;
+}
+.deleteTip{
+    color: red;
+    font-size: 1.2em;
+    font-weight: bold;
+    word-break: break-all;
+}
+.choice span{
+    width: 120px;
+    height: 30px;
+    margin: 1px;
+    border: 1px solid rgb(56,56,56);
+    color: white;
+    background-color: rgb(56,56,56);
+    cursor: pointer;
+}
+
+
+
+.app:hover{
+    animation: bg56Dark 0.3s;
+    animation-fill-mode: forwards;
+}
+.ops span:hover{
+    animation: bgTrans2White_colorWhite256 0.5s;
+    animation-fill-mode: forwards;
+}
+.choice span:hover{
+    animation: bg562White_colorWhite256 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bg56Dark {
+    from{
+        background-color: rgba(56,56,56,0.6);
+    }
+    to{
+        background-color: rgba(56,56,56,0.8);
+    }
+}
+@keyframes bgTrans2White_colorWhite256 {
+    from{
+        background-color: transparent;
+        color: white;
+    }
+    to{
+        background-color: white;
+        color: rgba(56,56,56,0.8);
+    }
+}
+@keyframes bg562White_colorWhite256 {
+    from{
+        background-color: rgb(56,56,56);
+        color: white;
+    }
+    to{
+        background-color: white;
+        color: rgb(56,56,56);
+    }
+}

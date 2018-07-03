@@ -2,10 +2,24 @@
     height: 300px;
     border-bottom: 1px solid rgba(56,56,56,0.2);
 }
-.appIcon{
+.appIconFrame{
     margin-left: 50px;
     height: 90%;
     width: 180px;
+    position: relative;
+}
+.appIconDefaultBg{
+    position: absolute;
+}
+.appIcon{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto auto;
 }
 .appDetails{
     height: 90%;
@@ -20,12 +34,17 @@
     position: absolute;
     bottom: 5%;
 }
-.ops a{
+.ops span{
     width: 130px;
     height: 30px;
     border: 1px solid rgb(56,56,56);
     color: white;
     background-color: rgb(56,56,56);
+    cursor: pointer;
+}
+.androidDownload,
+.originalSource{
+    margin-left: 25px;
 }
 .androidQRFrame{
     width: 230px;
@@ -41,11 +60,8 @@
     box-shadow: 0 0 5px black;
 }
 
-.ops a:last-child{
-    margin-left: 25px;
-}
 
-.ops a:hover{
+.ops span:hover{
     animation: colorWhite256_bgColor562White 0.5s;
     animation-fill-mode: forwards;
 }

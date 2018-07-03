@@ -17,6 +17,8 @@ $(document).ready(function () {
 
         //详细信息按钮点击跳转
         infoClick();
+
+        originalSourceClick();
     }
 
     //详细信息按钮点击跳转
@@ -50,6 +52,18 @@ $(document).ready(function () {
             });
             $(this).mouseleave(function () {
                 $androidQRFrame.addClass('disPlayNone');
+            });
+        });
+    }
+    
+    function originalSourceClick() {
+        var $originalSources = $('.originalSource');
+        $originalSources.each(function () {
+            $(this).click(function () {
+                var $appDetails = $(this).closest('.appDetails');
+                var appName = $appDetails.find('.appName').html().trim();
+                var url = 'https://github.com/18556790410/eclipse-workspace-' +appName+ '/';
+                window.open(url,'_blank');
             });
         });
     }
