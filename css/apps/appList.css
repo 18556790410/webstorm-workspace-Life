@@ -40,13 +40,12 @@
     border: 1px solid rgb(56,56,56);
     color: white;
     background-color: rgb(56,56,56);
-    cursor: pointer;
 }
 .androidDownload,
 .originalSource{
     margin-left: 25px;
 }
-.androidQRFrame{
+.downloadQRFrame{
     width: 230px;
     height: 230px;
     position: absolute;

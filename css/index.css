@@ -20,6 +20,7 @@
     margin: 30px;
     color: white;
     border: 1px solid white;
+    cursor: default;
 }
 
 .navigation a:hover{

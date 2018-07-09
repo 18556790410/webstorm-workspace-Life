@@ -4,7 +4,7 @@ $(document).ready(function () {
 
     function Title(title) {
         var className = title[0].className
-        this.titleName = className.substring(className.indexOf(' ')+1,className.indexOf('title',2));
+        this.titleName = className.substring(className.indexOf(' ')+1,className.indexOf('Title'));
         this.pre = title.find('.pre');
         this.otherTitles = title.siblings('.title');
 
@@ -45,7 +45,7 @@ $(document).ready(function () {
                 var title = new Title($(this));
                 title.preRotate();
                 title.dark();
-                // title.showTargetFrame();
+                title.showTargetFrame();
             });
         });
     }

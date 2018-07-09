@@ -12,7 +12,6 @@
     background-color: rgba(56,56,56,0.8);
     color: white;
     font-size: 1.5em;
-    cursor: pointer;
     border-radius: 0 0 0 10px;
 }
 .pre{
@@ -24,6 +23,91 @@
     border-right: 8px solid transparent;
     border-bottom: 8px solid transparent;
 }
+.nameFrame,
+.androidDownloadFrame,
+.originalSourceFrame{
+    height: 53px;
+}
+.name,
+.androidDownload,
+.originalSource{
+    height: 33px;
+    width: 300px;
+    font-size: 1.2em;
+    border: 0;
+    border-left: 0.5px solid rgba(56,56,56,0.5);
+    border-top: 0.5px solid rgba(56,56,56,0.5);
+    border-bottom: 0.5px solid rgba(56,56,56,0.5);
+}
+.nameUpdate,
+.androidDownloadUpdate,
+.originalSourceUpdate{
+    height: 34px;
+    width: 80px;
+}
+.iconFileFrame,
+.functionIntroductionFileFrame,
+.impressionPicsFileFrame,
+.userReferenceFileFrame,
+.updateLogFileFrame{
+    height: 33px;
+    width: 300px;
+    border-left: 0.5px solid rgba(56,56,56,0.5);
+    border-top: 0.5px solid rgba(56,56,56,0.5);
+    border-bottom: 0.5px solid rgba(56,56,56,0.5);
+    position: relative;
+}
+.iconUpdate,
+.functionIntroductionUpdate,
+.impressionPicsUpdate,
+.userReferenceUpdate,
+.updateLogUpdate{
+    height: 34px;
+    width: 80px;
+}
+.iconPicPreview,
+.functionIntroductionPreview,
+.userReferencePreview{
+    margin-bottom: 10px;
+}
+.functionIntroductionPreview,
+.userReferencePreview{
+    word-break: break-all;
+    white-space: pre-line;
+}
+.impressPicsPreview img{
+    width: 100px;
+    margin: 10px;
+    margin-top: 0;
+}
+.bh{
+    border-bottom: 0.5px solid rgba(56,56,56,0.5);
+}
+.log{
+    height: 40px;
+    border-bottom: 0.5px solid rgba(56,56,56,0.5);
+}
+.logNumber{
+    width: 10%;
+}
+.logTime{
+    width: 20%;
+}
+.logTheme{
+    width: 60%;
+    word-break: break-all;
+}
+.logOps{
+    width: 10%;
+}
+.delete{
+    width: 60%;
+    height: 50%;
+    font-size: 0.8em;
+    border: 0.5px solid rgba(56,56,56,0.5);
+    border-radius: 100px;
+}
+
 
 .title:hover{
     animation: bg56Dark 0.3s;
@@ -34,6 +118,46 @@
     transform: rotate(90deg);
     transform-origin: 4px 8px;
 }
+.name:hover{
+    animation: border56Dark;
+    animation-fill-mode: forwards;
+}
+.picFrame:hover{
+    animation: border56Dark;
+    animation-fill-mode: forwards;
+}
+.functionIntroductionFileFrame:hover{
+    animation: border56Dark;
+    animation-fill-mode: forwards;
+}
+.androidDownload:hover{
+    animation: border56Dark;
+    animation-fill-mode: forwards;
+}
+.originalSource:hover{
+    animation: border56Dark;
+    animation-fill-mode: forwards;
+}
+.impressionPicsFileFrame:hover{
+    animation: border56Dark;
+    animation-fill-mode: forwards;
+}
+.userReferenceFileFrame:hover{
+    animation: border56Dark;
+    animation-fill-mode: forwards;
+}
+.updateLogFileFrame:hover{
+    animation: border56Dark;
+    animation-fill-mode: forwards;
+}
+.log:hover{
+    animation: bgWhite256Light;
+    animation-fill-mode: forwards;
+}
+.delete:hover{
+    animation: bgWhite2565_colorBlack2White 0.3s;
+    animation-fill-mode: forwards;
+}
 
 @keyframes bg56Dark {
     from{
@@ -41,5 +165,31 @@
     }
     to{
         background-color: rgba(56,56,56,1);
+    }
+}
+@keyframes border56Dark {
+    from{
+        border-color: rgba(56,56,56,0.5);
+    }
+    to{
+        border-color: rgba(56,56,56,0.8);
+    }
+}
+@keyframes bgWhite2565_colorBlack2White {
+    from{
+        background-color: white;
+        color: black;
+    }
+    to{
+        background-color: rgba(56,56,56,0.5);
+        color: white;
+    }
+}
+@keyframes bgWhite256Light {
+    from{
+        background-color: white;
+    }
+    to{
+        background-color: rgba(56,56,56,0.1);
     }
 }

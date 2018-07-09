@@ -3,6 +3,7 @@ body{
     overflow-x: hidden;
     overflow-y: auto;
     font-family: 等线;
+    cursor: default;
 }
 iframe{
     margin: 0;

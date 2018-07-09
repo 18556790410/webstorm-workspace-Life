@@ -46,12 +46,12 @@ $(document).ready(function () {
         var $androidDownloads = $('.androidDownload');
         $androidDownloads.each(function () {
             var $appDetails = $(this).closest('.appDetails');
-            var $androidQRFrame = $appDetails.find('.androidQRFrame');
+            var $downloadQRFrame = $appDetails.find('.downloadQRFrame');
             $(this).mouseenter(function () {
-                $androidQRFrame.removeClass('disPlayNone');
+                $downloadQRFrame.removeClass('disPlayNone');
             });
             $(this).mouseleave(function () {
-                $androidQRFrame.addClass('disPlayNone');
+                $downloadQRFrame.addClass('disPlayNone');
             });
         });
     }
