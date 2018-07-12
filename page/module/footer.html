@@ -13,14 +13,11 @@
             this.webRoot = localStorage.getItem('webRoot');
             this.head = document.getElementsByTagName('head').item(0);
             this.body = document.getElementsByTagName('body').item(0);
-        }
-        //定义Module的方法
-        Module.prototype = {
             //加载CSS文件
             //参数：
             //  module：Module对象；
             //  relativeURL：当前文件相对路径，例：css/header.css；
-            initCSS : function(module,relativeURL) {
+            this.initCSS = function(module,relativeURL) {
                 var css = document.createElement('link');
                 css.rel = 'stylesheet';
                 css.href = module.webRoot + relativeURL;
@@ -31,7 +28,7 @@
             //  module：Module对象；
             //  relativeURL：当前文件相对路径，例：css/header.css；
             //  targetPart：在head末尾加载js / 在body末尾加载js，例：module.head
-            initJS : function(module,relativeURL,targetPart) {
+            this.initJS = function(module,relativeURL,targetPart) {
                 var js = document.createElement('script');
                 js.type = 'text/javascript';
                 js.src = module.webRoot + relativeURL;

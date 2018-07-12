@@ -62,10 +62,13 @@
             <!--------------------------------------------------------------------->
             <li class="title androidDownloadTitle fullWidth flexCS">
                 <div class="pre"></div>
-                <span>Android端下载地址</span>
+                <span>Android端安装包</span>
             </li>
             <li class="frame androidDownloadFrame fullWidth flexCC disPlayNone">
-                <input type="text" class="androidDownload">
+                <label class="androidDownloadFileFrame flexCC">
+                    After.apk
+                    <input type="file" class="androidDownload disPlayNone">
+                </label>
                 <input type="button" class="androidDownloadUpdate" value="提交">
             </li>
 
@@ -142,7 +145,7 @@
                 <div class="pre"></div>
                 <span>更新日志</span>
             </li>
-            <li class="frame updateLogsFrame fullWidth flexCC ">
+            <li class="frame updateLogsFrame fullWidth flexCC disPlayNone">
                 <ul class="fullWidth fullHeight">
                     <li class="fullWidth flexCC" style="height: 60px;">
                         <label class="updateLogFileFrame flexCC">
@@ -152,14 +155,14 @@
                         <input type="button" class="updateLogUpdate" value="提交">
                     </li>
                     <li class="fullWidth">
-                        <ul class="fullWidth" style="margin-left: 10px;margin-right: 10px;">
+                        <ul class="fullWidth">
                             <li class="bh fullWidth flexCS">
                                 <span class="fullHeight flexCS" style="width: 10%;">编号</span>
                                 <span class="fullHeight flexCS" style="width: 20%;">时间</span>
                                 <span class="fullHeight flexCS" style="width: 60%;">主题</span>
                                 <span class="fullHeight flexCC" style="width: 10%;">操作</span>
                             </li>
-                            <li class="fullWidth">
+                            <li class="fullWidth flexCC">
                                 <ul class="logs fullWidth">
                                     <li class="log fullWidth flexCS">
                                         <input class="logID" type="hidden" value="1">
@@ -268,8 +271,21 @@
             </li>
             <!--------------------------------------------------------------------->
         </ul>
+
+        <div class="logDetailFrame fullWidth fullHeight flexCC disPlayNone">
+            <span class="logDetail">1.优化了锁屏情况下的响铃方式；
+
+                2.解决了等待1.5分钟后未延长响铃时间的bug；
+
+                提示：
+                1.重新安装后，记得重新添加桌面小部件！！！（不然你会发现桌面有4个光棍！）
+            </span>
+        </div>
+        <div class="disabledWaller fullWidth fullHeight disPlayNone"></div>
+        <div class="tip disPlayNone"></div>
     </div>
 
+    <script type="text/javascript" src="../../../../js/public.js"></script>
     <script type="text/javascript" src="../../../../js/admin/management/apps/appUpdate.js"></script>
 </body>
 </html>

@@ -1,7 +1,8 @@
 $(document).ready(function () {
 
-
-
+    
+    //标题类
+    //
     function Title(title) {
         var className = title[0].className
         this.titleName = className.substring(className.indexOf(' ')+1,className.indexOf('Title'));
@@ -10,18 +11,14 @@ $(document).ready(function () {
 
         this.preRotate = function () {
             this.pre.addClass('preRotate');
-            this.otherTitles.each(function () {
-                $(this).find('.pre').removeClass('preRotate');
-            });
+            this.otherTitles.removeClass('preRotate');
         }
         this.dark = function () {
             title.css({
                 'background-color' : 'rgba(56,56,56,1)'
             });
-            this.otherTitles.each(function () {
-                $(this).css({
-                    'background-color' : 'rgba(56,56,56,0.8)'
-                });
+            this.otherTitles.css({
+                'background-color' : 'rgba(56,56,56,0.8)'
             });
         }
         this.showTargetFrame = function () {
@@ -29,13 +26,14 @@ $(document).ready(function () {
             var $targetFrame = title.closest('.preview').find(targetFrameClassName);
             $targetFrame.removeClass('disPlayNone');
             var $others = $targetFrame.siblings('.frame');
-            $others.each(function () {
-                $(this).addClass('disPlayNone');
-            });
+            $others.addClass('disPlayNone');
         }
     }
 
     titleItemClick();
+    deleteClick();
+    logItemClick();
+    logDetailFrameClick();
 
 
     function titleItemClick() {
@@ -47,6 +45,37 @@ $(document).ready(function () {
                 title.dark();
                 title.showTargetFrame();
             });
+        });
+    }
+
+    function deleteClick() {
+        var $deletes = $('.delete');
+        $deletes.each(function () {
+            $(this).click(function () {
+                event.stopPropagation();
+                
+            });
+        });
+    }
+    
+    function logItemClick() {
+        var $logs = $('.log');
+        $logs.each(function () {
+            $(this).click(function () {
+                popDialog($('.logDetailFrame'));
+                $(this).css({
+                    'background-color':'rgba(56,56,56,0.1)'
+                });
+                $(this).siblings('.log').css({
+                    'background-color':'white'
+                });
+            });
+        });
+    }
+
+    function logDetailFrameClick() {
+        $('.logDetailFrame').click(function () {
+            closeDialog($('.logDetailFrame'));
         });
     }
 

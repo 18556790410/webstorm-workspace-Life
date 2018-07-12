@@ -47,6 +47,7 @@
 }
 .iconFileFrame,
 .functionIntroductionFileFrame,
+.androidDownloadFileFrame,
 .impressionPicsFileFrame,
 .userReferenceFileFrame,
 .updateLogFileFrame{
@@ -59,6 +60,7 @@
 }
 .iconUpdate,
 .functionIntroductionUpdate,
+.androidDownloadUpdate,
 .impressionPicsUpdate,
 .userReferenceUpdate,
 .updateLogUpdate{
@@ -81,7 +83,12 @@
     margin-top: 0;
 }
 .bh{
+    width: 780px;
+    margin-left: 10px;
     border-bottom: 0.5px solid rgba(56,56,56,0.5);
+}
+.logs{
+    width: 780px;
 }
 .log{
     height: 40px;
@@ -106,6 +113,16 @@
     font-size: 0.8em;
     border: 0.5px solid rgba(56,56,56,0.5);
     border-radius: 100px;
+}
+.logDetailFrame{
+    position: fixed;
+    z-index: 1000;
+}
+.logDetail{
+    word-break: break-all;
+    white-space: pre-line;
+    width: 780px;
+    background-color: white;
 }
 
 
@@ -135,6 +152,10 @@
     animation-fill-mode: forwards;
 }
 .originalSource:hover{
+    animation: border56Dark;
+    animation-fill-mode: forwards;
+}
+.androidDownloadFileFrame:hover{
     animation: border56Dark;
     animation-fill-mode: forwards;
 }
