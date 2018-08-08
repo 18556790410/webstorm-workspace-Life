@@ -1,0 +1,76 @@
+body{
+    overflow: hidden;
+}
+.material{
+    object-fit: fill;
+}
+.content{
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(56,56,56,0.8);
+    height: 400px;
+    width: 300px;
+}
+.lifeTip{
+    height: 15%;
+    font-size: 3em;
+    color: white;
+    font-weight: bold;
+}
+.dynamicKeyFrame{
+    height: 20%;
+}
+.dynamicKey,
+.login{
+    color: rgb(56,56,56);
+    font-size: 1.5em;
+    border: 1px solid white;
+    height: 75%;
+}
+.dynamicKey{
+    width: 70%;
+    text-transform: uppercase;
+}
+.login{
+    margin-left: 0.5%;
+    background-color: white;
+    width: 26%;
+    font-weight: bold;
+}
+.dailySentence{
+    height: 65%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.chinese,
+.english,
+.origin,
+.quote{
+    width: 98%;
+    color: white;
+    font-size: 1em;
+}
+.origin,
+.quote{
+    font-size: 0.8em;
+}
+.dailySentence span{
+    margin-top: 10px;
+}
+.login:hover{
+    animation: bgColorWhite256_colorBlack2White 0.5s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes bgColorWhite256_colorBlack2White {
+    from{
+        background-color: white;
+        color: rgb(56,56,56);
+    }
+    to{
+        background-color: rgb(56,56,56);
+        color: white;
+    }
+}

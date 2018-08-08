@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Footer</title>
+    <script type="text/javascript">
+        //定义公共组件类Module
+        //成员变量：
+        //  webRoot：网站根目录，例：‘http://localhost:63342/workspace/Life/’；
+        //  head：原生head标签对象；
+        //  body：原生body标签对象；
+        function Module() {
+            this.webRoot = localStorage.getItem('webRoot');
+            this.head = document.getElementsByTagName('head').item(0);
+            this.body = document.getElementsByTagName('body').item(0);
+            //加载CSS文件
+            //参数：
+            //  module：Module对象；
+            //  relativeURL：当前文件相对路径，例：css/header.css；
+            this.initCSS = function(module,relativeURL) {
+                var css = document.createElement('link');
+                css.rel = 'stylesheet';
+                css.href = module.webRoot + relativeURL;
+                module.head.appendChild(css);
+            },
+            //加载JS文件
+            //参数：
+            //  module：Module对象；
+            //  relativeURL：当前文件相对路径，例：css/header.css；
+            //  targetPart：在head末尾加载js / 在body末尾加载js，例：module.head
+            this.initJS = function(module,relativeURL,targetPart) {
+                var js = document.createElement('script');
+                js.type = 'text/javascript';
+                js.src = module.webRoot + relativeURL;
+                targetPart.appendChild(js);
+            }
+        }
+        //加载css以及jquery.js文件
+        var module = new Module();
+        module.initCSS(module,'view/css/public.css');
+        module.initCSS(module,'view/css/module/footer.css');
+        module.initJS(module,'view/js/jquery.js',module.head);
+    </script>
+</head>
+<body>
+
+    <ul class="footer fullWidth flexCC">
+        <li class="references fullHeight">
+            <a class="reference fullWidth flexCS" href="http://www.kaiyanapp.com/" target="_blank">视频（首页设计思路）出处：《开眼》官网</a>
+        </li>
+        <li class="record fullHeight">
+            <span class="copyright fullWidth flexCC">© tinygiant.top 版权所有</span>
+            <a class="icp fullWidth flexCC" href="http://www.miitbeian.gov.cn/" target="_blank">苏ICP备18041813号-1</a>
+        </li>
+        <li class="contact fullHeight">
+            <ul class="fullWidth fullHeight flexCE">
+                <li class="fullHeight">
+                    <span class="fullWidth flexCE">联系邮箱：770176299@qq.com</span>
+                    <span class="fullWidth flexCE">联系QQ：770176299</span>
+                    <span class="fullWidth flexCE">作者：周岱</span>
+                </li>
+                <li class="fullHeight">
+                    <img class="qrCode">
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <script type="text/javascript">
+        //加载其他js文件
+        var module = new Module();
+        module.initJS(module,'view/js/public.js',module.body);
+        module.initJS(module,'view/js/module/footer.js',module.body);
+    </script>
+</body>
+</html>

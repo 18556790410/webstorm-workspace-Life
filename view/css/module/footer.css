@@ -1,0 +1,55 @@
+.footer{
+    position: relative;
+    height: 200px;
+    background-color: rgb(56,56,56);
+    color: white;
+}
+a{
+    color: white;
+    cursor: default;
+    margin: 10px;
+}
+span,
+img{
+    margin: 10px;
+}
+.references,
+.record,
+.contact{
+    display: flex;
+    flex-flow: column-reverse;
+}
+.references{
+    width: 40%;
+}
+.record{
+    width: 20%;
+}
+.contact{
+    width: 40%;
+}
+.contact ul li{
+    display: flex;
+    flex-flow: column-reverse;
+}
+.contact ul li span{
+    margin-left: 0;
+}
+.qrCode{
+    height: 180px;
+    width: 180px;
+}
+
+a:hover{
+    animation: colorWhite2Black;
+    animation-fill-mode: forwards;
+}
+
+@keyframes colorWhite2Black {
+    from{
+        color: white;
+    }
+    to{
+        color: black;
+    }
+}

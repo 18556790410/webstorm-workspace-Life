@@ -1,0 +1,135 @@
+body{
+    overflow: hidden;
+}
+.bar{
+    width: 15%;
+    background-color: rgb(56,56,56);
+    flex-flow: column;
+}
+.bar a{
+    height: 50px;
+    font-size: 1.2em;
+    color: white;
+    border-bottom: 0.5px solid white;
+    cursor: default;
+}
+.sources{
+    width: 85%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    flex-flow: column;
+}
+.sources ul{
+    margin: 50px;
+}
+#indexSource li,
+#dailySentenceSource li{
+    height: 50px;
+    font-size: 1em;
+}
+#indexSource li span,
+#dailySentenceSource li span{
+    width: 200px;
+}
+.indexTitle,
+.referenceTitle,
+.referenceListTitle,
+.dailySentenceTitle,
+.dailySentenceListTitle{
+    font-weight: bold;
+    border-bottom: 1px solid rgb(56,56,56);
+}
+#indexSource .referenceList,
+#dailySentenceSource .dailySentenceList
+{
+    width: 564px;
+    height: auto;
+}
+#dailySentenceSource .dailySentenceList{
+    height: 280px;
+}
+#indexSource .referenceList .hd,
+#dailySentenceSource .dailySentenceList .hd{
+    height: 40px;
+    border-bottom: 0.5px solid rgb(56,56,56);
+}
+#indexSource .reference,
+#dailySentenceSource .dailySentence{
+    height: 40px;
+    font-size: 0.8em;
+}
+#indexSource .reference .number,
+#indexSource .reference .ops,
+#dailySentenceSource .dailySentence .number,
+#dailySentenceSource .dailySentence .ops{
+    width: 20%;
+}
+#indexSource .reference .content,
+#dailySentenceSource .dailySentence .content{
+    width: 60%;
+}
+#indexSource .reference .ops .delete,
+#dailySentenceSource .dailySentence .ops .delete{
+    width: 40%;
+    height: 40%;
+    border-radius: 100px;
+    border: 0.5px solid rgb(56,56,56);
+}
+#dailySentenceSource .dailySentenceList .paging{
+    height: 40px;
+    border-top: 0.5px solid rgb(56,56,56);
+}
+#dailySentenceSource .dailySentenceList .paging span{
+    width: 60px;
+    font-size: 0.8em;
+    color: green;
+}
+
+#indexSource input[type=text],
+#indexSource input[type=file],
+#dailySentenceSource input[type=text],
+#dailySentenceSource input[type=file]{
+    width: 300px;
+    height: 21px;
+}
+#indexSource input[type=file],
+#dailySentenceSource input[type=file]{
+    width: 304px;
+}
+#indexSource input[type=button],
+#dailySentenceSource input[type=button]{
+    margin-left: 1px;
+    height: 25px;
+    width: 60px;
+}
+
+
+.bar a:hover{
+    animation: bg562White_colorWhite256 0.3s;
+    animation-fill-mode: forwards;
+}
+.delete:hover{
+    animation: bgWhite256_colorBlack2White 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bgWhite256_colorBlack2White {
+    from{
+        background-color: white;
+        color: black;
+    }
+    to{
+        background-color: rgb(56,56,56);
+        color: white;
+    }
+}
+@keyframes bg562White_colorWhite256 {
+    from{
+        background-color: rgb(56,56,56);
+        color: white;
+    }
+    to{
+        background-color: white;
+        color: rgb(56,56,56);
+    }
+}

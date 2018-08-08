@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BlogUpdate</title>
+    <link rel="stylesheet" href="../../../../css/public.css">
+    <link rel="stylesheet" href="../../../../css/admin/management/blogs/blogUpdate.css">
+    <script type="text/javascript" src="../../../../js/jquery.js"></script>
+</head>
+<body>
+
+    <div class="waller fullWidth">
+        <ul class="classificationFrame fullWidth">
+            <li class="classificationTitle fullWidth flexCS">博客分类</li>
+            <li class="fullWidth flexCS">
+                <input type="text" class="classificationNameWaitAdd" placeholder="填写分类">
+                <input type="button" class="classificationAdd" value="添加">
+            </li>
+            <li class="classificationsTitle fullWidth flexCS">分类列表</li>
+            <li class="classifications fullWidth flexCS">
+                <div class="classification flexCS">
+                    <input type="hidden" class="classificationID">
+                    <input type="text" class="classificationName">
+                    <input type="button" class="update" value="更新">
+                    <input type="button" class="delete" value="删除">
+                </div>
+            </li>
+        </ul>
+
+        <ul class="blogFrame fullWidth">
+            <li class="blogsTitle fullWidth flexCS">博客列表</li>
+            <li class="fullWidth flexCS">
+                <input type="file" class="blogWaitAdd">
+                <select class="blogClassificationAdd">
+                    <option value="mysql">mysql</option>
+                </select>
+                <input type="button" class="blogAdd" value="添加">
+            </li>
+            <li class="th fullWidth flexCS">
+                <span class="flexCS" style="width: 10%;">编号</span>
+                <span class="flexCS" style="width: 25%">分类
+                    <select class="blogClassificationSelector"></select>
+                </span>
+                <span class="flexCS" style="width: 35%;">名称
+                    <input type="text" class="searchName" placeholder="输入名称搜索">
+                    <input type="button" class="searchNameBtn" value="搜索">
+                </span>
+                <span class="flexCS" style="width: 15%;">上传时间
+                    <select class="blogPublishTimeTypeSelector">
+                        <option value="late">最近</option>
+                        <option value="early">最早</option>
+                    </select>
+                </span>
+                <span class="flexCC" style="width: 15%;">操作</span>
+            </li>
+            <li class="blogs fullWidth">
+                <div class="blog fullWidth flexCS">
+                    <input type="hidden" class="blogID">
+                    <span class="blogNumber">1页8条</span>
+                    <span class="blogClassification">mysql</span>
+                    <span class="blogName">mysql在windows下的中文乱码</span>
+                    <span class="blogPublishTime">2018-08-08 12：34</span>
+                    <div class="ops flexCC">
+                        <span class="delete flexCC">删除</span>
+                    </div>
+                </div>
+            </li>
+            <li class="paging fullWidth flexCC">
+                <span class="start flexCC">首页</span>
+                <span class="before flexCC">上一页</span>
+                <select class="currentPage">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <span class="after flexCC">下一页</span>
+                <span class="end flexCC">尾页</span>
+            </li>
+        </ul>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+input[type=text]{
+    width: 300px;
+    height: 21px;
+}
+
+input[type=file]{
+    width: 304px;
+}
+input[type=button],
+select{
+    margin-left: 1px;
+    height: 25px;
+    width: 60px;
+}
+
+.classificationTitle,
+.classificationsTitle,
+.blogsTitle{
+    font-weight: bold;
+    border-bottom: 1px solid rgb(56,56,56);
+}
+.classificationFrame li,
+.blogFrame li{
+    height: 50px;
+    font-size: 1em;
+}
+.blogFrame .blogs{
+    height: auto;
+}
+.blogFrame .blog{
+    height: 50px;
+}
+.classificationAddFrame,
+.th{
+    border-bottom: 0.5px solid rgb(56,56,56);
+}
+.classifications{
+    flex-wrap: wrap;
+}
+.classification{
+    height: 40px;
+    width: 480px;
+}
+.blogNumber{
+    width: 10%;
+}
+.blogName{
+    width: 35%;
+}
+.blogClassification{
+    width: 25%;
+}
+.blogPublishTime,
+.ops{
+    width: 15%;
+}
+.ops .delete{
+    border: 0.5px solid rgb(56,56,56);
+    width: 50px;
+    height: 20px;
+    border-radius: 100px;
+}
+
+.paging{
+    height: 40px;
+    border-top: 0.5px solid rgb(56,56,56);
+}
+.paging span{
+    width: 60px;
+    font-size: 0.8em;
+    color: green;
+}
+
+.ops .delete:hover{
+    animation: bgColorTransparent256_colorBlack2White 0.5s;
+    animation-fill-mode: forwards;
+}
+.blog:hover{
+    animation: dark;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bgColorTransparent256_colorBlack2White {
+    from{
+        background-color: transparent;
+        color: black;
+    }
+    to{
+        background-color: rgb(56,56,56);
+        color: white;
+    }
+}
+@keyframes dark {
+    from{
+        background-color: transparent;
+    }
+    to{
+        background-color: whitesmoke;
+    }
+}

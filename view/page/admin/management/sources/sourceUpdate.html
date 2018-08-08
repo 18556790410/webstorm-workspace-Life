@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SourceUpdate</title>
+    <link rel="stylesheet" href="../../../../css/public.css">
+    <link rel="stylesheet" href="../../../../css/admin/management/sources/sourceUpdate.css">
+    <script type="text/javascript" src="../../../../js/jquery.js"></script>
+</head>
+<body>
+
+    <div class="waller fullWidth fullHeight">
+
+        <ul class="fullWidth fullHeight flexCS">
+            <li class="bar fullHeight flexCC">
+                <a href="#indexSource" class="fullWidth flexCS">首页资源配置</a>
+                <a href="#dailySentenceSource" class="fullWidth flexCS">每日一句资源配置</a>
+            </li>
+            <li class="sources fullHeight">
+                <ul id="indexSource">
+                    <li class="indexTitle fullWidth flexCS">首页资源配置</li>
+                    <li class="fullHeight flexCS">
+                        <span>作者：</span>
+                        <input class="author" type="text" value="周岱">
+                        <input class="authorUpdate" type="button" value="提交">
+                    </li>
+                    <li class="fullHeight flexCS">
+                        <span>联系QQ：</span>
+                        <input class="qq" type="text" value="770176299">
+                        <input class="qqUpdate" type="button" value="提交">
+                    </li>
+                    <li class="fullHeight flexCS">
+                        <span>联系邮箱：</span>
+                        <input class="email" type="text" value="770176299@qq.com">
+                        <input class="emailUpdate" type="button" value="提交">
+                    </li>
+                    <li class="fullHeight flexCS">
+                        <span>联系二维码：</span>
+                        <input class="qrCode" type="file">
+                        <input class="qrCodeUpdate" type="button" value="提交">
+                    </li>
+                    <li class="fullHeight flexCS">
+                        <span>版权：</span>
+                        <input class="copyright" type="text" value="©2018 tinygiant.top 版权所有">
+                        <input class="copyrightUpdate" type="button" value="提交">
+                    </li>
+                    <li class="fullHeight flexCS">
+                        <span>ICP备案号：</span>
+                        <input class="icp" type="text" value="苏ICP备18041813号-1">
+                        <input class="icpUpdate" type="button" value="提交">
+                    </li>
+                    <li class="fullHeight flexCS">
+                        <span>ICP备案号链接：</span>
+                        <input class="icpURL" type="text" value="http://www.miitbeian.gov.cn/">
+                        <input class="icpURLUpdate" type="button" value="提交">
+                    </li>
+                    <li class="fullHeight flexCS">
+                        <span>公安备案号：</span>
+                        <input class="securityRecord" type="text" value="xxxxxxxxxxxxxxx">
+                        <input class="securityRecordUpdate" type="button" value="提交">
+                    </li>
+                    <li class="fullHeight flexCS">
+                        <span>公安备案号图标：</span>
+                        <input class="securityRecordLogo" type="file">
+                        <input class="securityRecordLogoUpdate" type="button" value="提交">
+                    </li>
+                    <li class="fullHeight flexCS">
+                        <span>公安备案号链接：</span>
+                        <input class="securityRecordURL" type="text" value="xxxxxxxxxxxxxxx">
+                        <input class="securityRecordURLUpdate" type="button" value="提交">
+                    </li>
+                    <li class="fullHeight flexCS">
+                        <span>背景视频：</span>
+                        <input class="bg" type="file">
+                        <input class="bgUpdate" type="button" value="提交">
+                    </li>
+                    <li class="referenceTitle fullWidth flexCS">鸣谢</li>
+                    <li class="fullHeight flexCS">
+                        <span>引用：</span>
+                        <input class="reference" type="text" value="视频（首页设计思路）出处：《开眼》官网">
+                    </li>
+                    <li class="fullHeight flexCS">
+                        <span>引用链接：</span>
+                        <input class="referenceURL" type="text" value="http://www.kaiyanapp.com/">
+                        <input class="referenceAdd" type="button" value="添加">
+                        <input class="referenceUpdate" type="button" value="更新">
+                    </li>
+                    <li class="referenceListTitle fullWidth flexCS">鸣谢列表</li>
+                    <li class="referenceList">
+                        <div class="hd fullWidth flexCS">
+                            <span class="flexCS" style="width: 20%;">编号</span>
+                            <span class="flexCS" style="width: 60%;">内容</span>
+                            <span class="flexCC" style="width: 20%;">操作</span>
+                        </div>
+                        <div class="reference fullWidth flexCS">
+                            <input class="referenceID" type="hidden">
+                            <span class="number fullHeight flexCS">1</span>
+                            <span class="content fullHeight flexCS">视频（首页设计思路）出处：《开眼》官网</span>
+                            <span class="ops fullHeight flexCC">
+                                <span class="delete flexCC">删除</span>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+                <ul id="dailySentenceSource">
+                    <li class="dailySentenceTitle fullWidth flexCS">每日一句资源配置</li>
+                    <li class="fullHeight flexCS">
+                        <span>中文句子：</span>
+                        <input class="chinese" type="text">
+                    </li>
+                    <li class="fullHeight flexCS">
+                        <span>英文句子：</span>
+                        <input class="english" type="text">
+                    </li>
+                    <li class="fullHeight flexCS">
+                        <span>出自：</span>
+                        <input class="origin" type="text">
+                    </li>
+                    <li class="fullHeight flexCS">
+                        <span>素材来源：</span>
+                        <input class="quote" type="text">
+                    </li>
+                    <li class="fullHeight flexCS">
+                        <span>配图：</span>
+                        <input class="dailyImg" type="file">
+                        <input class="dailySentenceAdd" type="button" value="添加">
+                        <input class="dailySentenceUpdate" type="button" value="更新">
+                    </li>
+
+                    <li class="dailySentenceListTitle fullWidth flexCS">每日一句资源列表</li>
+                    <li class="dailySentenceList">
+                        <div class="hd fullWidth flexCS">
+                            <span class="flexCS" style="width: 20%;">编号</span>
+                            <span class="flexCS" style="width: 60%;">内容</span>
+                            <span class="flexCC" style="width: 20%;">操作</span>
+                        </div>
+                        <div class="dailySentence fullWidth flexCS">
+                            <input class="dailySentenceID" type="hidden">
+                            <span class="number fullHeight flexCS">1</span>
+                            <span class="content fullHeight flexCS">视频（首页设计思路）出处：《开眼》官网</span>
+                            <span class="ops fullHeight flexCC">
+                                <span class="delete flexCC">删除</span>
+                            </span>
+                        </div>
+                        <div class="dailySentence fullWidth flexCS">
+                            <input class="dailySentenceID" type="hidden">
+                            <span class="number fullHeight flexCS">1</span>
+                            <span class="content fullHeight flexCS">视频（首页设计思路）出处：《开眼》官网</span>
+                            <span class="ops fullHeight flexCC">
+                                <span class="delete flexCC">删除</span>
+                            </span>
+                        </div>
+                        <div class="dailySentence fullWidth flexCS">
+                            <input class="dailySentenceID" type="hidden">
+                            <span class="number fullHeight flexCS">1</span>
+                            <span class="content fullHeight flexCS">视频（首页设计思路）出处：《开眼》官网</span>
+                            <span class="ops fullHeight flexCC">
+                                <span class="delete flexCC">删除</span>
+                            </span>
+                        </div>
+                        <div class="dailySentence fullWidth flexCS">
+                            <input class="dailySentenceID" type="hidden">
+                            <span class="number fullHeight flexCS">1</span>
+                            <span class="content fullHeight flexCS">视频（首页设计思路）出处：《开眼》官网</span>
+                            <span class="ops fullHeight flexCC">
+                                <span class="delete flexCC">删除</span>
+                            </span>
+                        </div>
+                        <div class="dailySentence fullWidth flexCS">
+                            <input class="dailySentenceID" type="hidden">
+                            <span class="number fullHeight flexCS">1</span>
+                            <span class="content fullHeight flexCS">视频（首页设计思路）出处：《开眼》官网</span>
+                            <span class="ops fullHeight flexCC">
+                                <span class="delete flexCC">删除</span>
+                            </span>
+                        </div>
+                        <div class="paging fullWidth flexCC">
+                            <span class="start flexCC">首页</span>
+                            <span class="before flexCC">上一页</span>
+                            <select class="currentPage">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            <span class="after flexCC">下一页</span>
+                            <span class="end flexCC">尾页</span>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="tip flexCC disPlayNone"></div>
+</body>
+</html>

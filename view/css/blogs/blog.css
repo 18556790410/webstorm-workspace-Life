@@ -1,0 +1,79 @@
+.side{
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 300px;
+    color: white;
+}
+.dailySentence{
+    height: 280px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.catalogs{
+
+}
+.articles{
+    font-size: 0.8em;
+    font-weight: bold;
+    height: 25px;
+}
+.dailySentence,
+.catalogs,
+.articles{
+    margin-top: 10px;
+    background-color: rgba(56,56,56,0.8);
+}
+.catalog{
+    height: 30px;
+    font-weight: bold;
+}
+.article{
+    height: 25px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.chinese,
+.english,
+.origin,
+.quote{
+    width: 98%;
+    color: white;
+    font-size: 1em;
+}
+.origin,
+.quote{
+    font-size: 0.8em;
+}
+.material{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.dailySentence li{
+    margin-top: 20px;
+}
+
+.catalog:hover{
+    animation: bgColorTransparent2White_colorWhite256 0.5s;
+    animation-fill-mode: forwards;
+}
+.article:hover{
+    animation: bgColorTransparent2White_colorWhite256 0.5s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes bgColorTransparent2White_colorWhite256 {
+    from{
+        background-color: transparent;
+        color: white;
+    }
+    to{
+        background-color: white;
+        color: rgba(56,56,56,0.8);
+    }
+}
